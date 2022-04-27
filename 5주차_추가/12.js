@@ -21,9 +21,9 @@ printFruits('banana', 2000);
 function printFruitArr(arr){
     console.log(arr[0]+'은 '+arr[1]);
 }
-prinFruittArr(['banana', 2000]);
+prinFruitArr(['banana', 2000]);
 
-function printObj(obj){
+function printFruitObj(obj){
     console.log(obj.name+'은 '+obj.price);
 }
-printObj({name:'apple', price:3000});
+printFruitObj({name:'apple', price:3000});
