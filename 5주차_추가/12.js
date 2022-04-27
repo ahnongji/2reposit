@@ -1,20 +1,16 @@
 function printBanana(){
     console.log('banana');
 }
-
-printBanana();
-
 function printApple(){
     console.log('apple');
 }
-
+printBanana();
 printApple();
-
 
 function printFruit(name){
     console.log(name);
 }
-printFruit('bananan');
+printFruit('banana');
 printFruit('apple');
 
 function printFruits(name, price){
@@ -22,10 +18,10 @@ function printFruits(name, price){
 }
 printFruits('banana', 2000);
 
-function printArr(arr){
-    console.log(arr[0]+'은 '+arr[1];)
+function printFruitArr(arr){
+    console.log(arr[0]+'은 '+arr[1]);
 }
-printArr(['banana', 2000]);
+prinFruittArr(['banana', 2000]);
 
 function printObj(obj){
     console.log(obj.name+'은 '+obj.price);
