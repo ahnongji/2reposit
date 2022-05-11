@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>안은지의 이력서</title>
+        <link rel="stylesheet" href="실습.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    </head>
+
+    <body>
+      <div class="mainbox">
+    <div class="title-box">
+      <h1>안은지</h1>
+      <p class="name-text">기획/디자인 트랙</p>
+    </div>
+    <section>
+      <h2>ABOUT ME</h2>
+      <p class="about-me-text"> 멋사 10기 안은지입니다. </p>
+    </section>
+    <section>
+        <h2>EXPERIENCE</h2>
+        <div class="float-wrap">
+          <p class="title-text">과외</p>
+          <p class="year-text">2021 - now</p>
+        </div>
+        <p class="desc-text">중등수학</p>
+        <p class="desc-subtext">성적 40점 향상</p>
+    </section>
+
+    <section>
+        <h2>ACTIVITIES</h2>
+        <div class="float-wrap">
+          <p class="title-text">멋사 10기</p>
+          <p class="year-text">2022- now</p>
+        </div>
+        <p class="desc-text">기획/디자인 트랙</p>
+        <p class="desc-subtext">10조</p>
+        <div class="float-wrap">
+          <p class="title-text">KLC 성균관대 지부 2.5기</p>
+          <p class="year-text">2022-now</p>
+        </div>
+        <p class="desc-text">콘텐츠팀</p>
+        <p class="desc-subtext">봉사 및 관련 콘텐츠 기획</p>
+    </section>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="float-wrap">
+          <p class="title-text">혜화여자고등학교</p>
+          <p class="year-text">2016 - 2019</p>
+        </div>
+        <p class="desc-text">고등학생</p>
+        <p class="desc-subtext">즐거운 학교생활</p>
+
+        <div class="float-wrap">
+          <p class="title-text">성균관대학교</p>
+          <p class="year-text">2021 - now</p>
+        </div>
+        <p class="desc-text">코로나학번</p>
+        <p class="desc-subtext">온라인 학교생활</p>
+    </section>
+
+    <section>
+      <h2>AWARDS</h2>
+      <div class="float-wrap">
+        <p class="title-text">없음</p>
+        <p class="year-text">X</p>
+      </div>
+      <p class="desc-text">X</p>
+    </section>
+
+    <div class="sns-wrap">
+      <a href="http://facebook.com"><img class="sns-img" src="images/facebook.png"></a>
+      <a href="http://twitter.com"><img class="sns-img" src="images/twitter.png"></a>
+      <a href="http://linked-in.com"><img class="sns-img" src="images/linked-in.png"></a>
+      <a href="http://instagram.com"><img class="sns-img" src="images/insta.png"></a>
+    </div>
+  </div>
+  <footer>
+      <p>Copyright CODE LION All rights reserved. </p>
+  </footer>    
+
+        <script>
+            var ID = prompt('ID를 입력하세요','');
+            if (ID == '안은지'){
+                var PW = prompt('PW를 입력하세요','');
+                if (PW == '안은지'){
+                    $('.mainbox').css('display','block');
+                }
+                else{
+                    alert('PW가 일치하지 않습니다.');
+                    location.reload();
+                }
+            }
+            else{
+                alert('ID가 일치하지 않습니다.');
+                location.reload();
+            }
+
+            var profVis = false;
+            $('.profileBox h2').click(function(){
+                if (profVis == false){
+                    $('#profile').slideDown(200);
+                    profVis = true
+                }
+                else{
+                    $('#profile').slideUp(200);
+                    profVis = false
+                }
+            })
+
+            var eduVis = false;
+            $('.eduBox h2').click(function(){
+                if (eduVis == false){
+                    $('#education').slideDown(200);
+                    eduVis = true
+                }
+                else{
+                    $('#education').slideUp(200);
+                    eduVis = false
+                }
+            })
+
+            var workVis = false;
+            $('.workBox h2').click(function(){
+                if (workVis == false){
+                    $('#work').slideDown(200);
+                    workVis = true
+                }
+                else{
+                    $('#work').slideUp(200);
+                    workVis = false
+                }
+            })
+
+            var actVis = false;
+            $('.actBox h2').click(function(){
+                if (actVis == false){
+                    $('#act').slideDown(200);
+                    actVis = true
+                }
+                else{
+                    $('#act').slideUp(200);
+                    actVis = false
+                }
+            })
+
+            var refVis = false;
+
+            $('.refBox h2').click(function(){
+                if (refVis == false){
+                    $('#ref').slideDown(200);
+                    refVis = true
+                }
+                else{
+                    $('#ref').slideUp(200);
+                    refVis = false
+                }
+            })
+
+
+
+        </script>
+
+    </body>
+</html>
